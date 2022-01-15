@@ -3,7 +3,7 @@
 Database name : postweb  
 SQL di folder DB  
 
-#Admin  
+# Admin  
 
 username : admin  
 password : admin
