@@ -1,6 +1,4 @@
-# postweb
-###################
-Database
-###################
+# Database
 
 Database name : postweb
+SQL di folder DB
