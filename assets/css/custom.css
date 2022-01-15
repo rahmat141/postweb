@@ -1,0 +1,16 @@
+.slider {
+    max-height: 90%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.slider::-webkit-scrollbar{
+    width: 0;
+}
+
+.slider .item{
+    min-width: 500px;
+    max-height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}

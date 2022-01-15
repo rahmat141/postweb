@@ -1,0 +1,9 @@
+.file-materi {
+    visibility: hidden; 
+    position: absolute;
+}
+.preview-materi {
+    width:250px; 
+    height: auto; 
+    display:none;
+}
