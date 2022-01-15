@@ -1,4 +1,4 @@
 # Database
 
-Database name : postweb
+Database name : postweb  
 SQL di folder DB
