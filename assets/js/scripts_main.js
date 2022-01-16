@@ -21,3 +21,12 @@ $("#filter").on("keyup", function () {
 		// }
 	});
 });
+
+$(document).on("click", "#downloadMateri", function () {
+	var a = document.createElement("a");
+	a.href = $(this).data("img");
+	a.download = $(this).data("name") + ".jpg";
+	document.body.appendChild(a);
+	a.click();
+	document.body.removeChild(a);
+});

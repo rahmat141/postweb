@@ -19,9 +19,18 @@
                                 <img src="storage/image/<?= $materi['image'] ?>" alt="new-arrivals images" />
                                 <div class="single-new-arrival-bg-overlay"></div>
                             </div>
-                            <div class="mt-4">
-                                <h4><?= $materi['nama'] ?></h4>
-                                <p style="text-align: left">
+                            <div class="mt-4 box-materi">
+                                <div class="row mb-1">
+                                    <div class="col-sm-12 align-self-center text-right">
+                                        <button type="button" id="downloadMateri" data-img="storage/image/<?= $materi['image'] ?>" data-name="<?= $materi['nama'] ?>" class="btn btn-outline-success btn-sm border-0">Download</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 align-self-center text-left">
+                                        <h5><?= $materi['nama'] ?></h5>
+                                    </div>
+                                </div>
+                                <p style="text-align: left" class="deskripsi-materi">
                                     <?= $materi['deskripsi'] ?>
                                 </p>
                             </div>

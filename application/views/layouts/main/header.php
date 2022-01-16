@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet" />
 
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" /> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
 
     <!-- title of site -->
     <title><?= $title ?></title>
@@ -34,7 +34,8 @@
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/owl.theme.default.min.css" />
 
     <!--bootstrap.min.css-->
-    <link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap4.min.css" />
 
     <!-- bootsnav -->
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/bootsnav.css" />
@@ -70,43 +71,42 @@
         <div class="top-area">
             <div class="header-area">
                 <!-- Start Navigation -->
-                <nav class="navbar navbar-default bootsnav navbar-sticky navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
-                    <!-- Start Top Search -->
-                    <!-- <div class="top-search">
-                        <div class="container">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                                <input type="text" class="form-control" placeholder="Search" />
-                                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- End Top Search -->
-
+                <!-- <nav class="navbar navbar-default bootsnav navbar-sticky navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000"> -->
+                <nav class="navbar fixed-top navbar-light bg-light">
                     <div class="container">
-                        <!-- Start Atribute Navigation -->
-                        <!-- <div class="attr-nav">
-                            <ul>
-                                <li class="search">
-                                    <a href="#"><span class="lnr lnr-magnifier"></span></a>
-                                </li>
-                            </ul>
-                        </div> -->
-                        <!--/.attr-nav-->
-                        <!-- End Atribute Navigation -->
+                        <a class="h5" href="<?= base_url('dashboard'); ?>">postweb.com</a>
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light mx-auto">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mb-2 mb-lg-0">
+                                        <li class="nav-item m-2">
+                                            <a class="nav-link" href="<?= base_url('dashboard'); ?>">Home</a>
+                                        </li>
+                                        <li class="nav-item m-2">
+                                            <a class="nav-link" href="<?= base_url('materi'); ?>">Materi</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </nav>
 
-                        <!-- Start Header Navigation -->
-                        <div class="navbar-header">
+                <!-- Start Header Navigation -->
+                <!-- <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                                 <i class="fa fa-bars"></i>
                             </button>
                             <a class="navbar-brand" href="<?= base_url('dashboard'); ?>">postweb.com</a>
-                        </div>
-                        <!--/.navbar-header-->
-                        <!-- End Header Navigation -->
+                        </div> -->
+                <!--/.navbar-header-->
+                <!-- End Header Navigation -->
 
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <!-- <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                             <ul class="nav navbar-nav navbar-center">
                                 <li>
                                     <a href="<?= base_url('dashboard'); ?>">home</a>
@@ -115,12 +115,12 @@
                                     <a href="<?= base_url('materi'); ?>">Materi</a>
                                 </li>
                             </ul>
-                            <!--/.nav -->
-                        </div>
-                        <!-- /.navbar-collapse -->
-                    </div>
-                    <!--/.container-->
-                </nav>
+                            /.nav
+                        </div> -->
+                <!-- /.navbar-collapse -->
+
+                <!--/.container-->
+                <!-- </nav> -->
                 <!--/nav-->
                 <!-- End Navigation -->
             </div>
